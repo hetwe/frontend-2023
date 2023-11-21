@@ -2,10 +2,9 @@
  * Кастомная валидация с добавление дополнительного элемента в html
  */
 
-
 const validateFields = ['firstName', 'lastName', 'middleName', 'email', 'phone'];
 
-const NAME_PATTERN = /^[А-Яа-я]{2,}$/;
+const NAME_PATTERN = /^[А-Я][а-я]{2,}$/;
 const PHONE_PATTERN = /^[\+]?[(]?[0-9]{3}[)]?[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{4,6}$/im;
 const EMAIL_PATTERN = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;
 
