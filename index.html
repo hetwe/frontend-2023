@@ -1,0 +1,151 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles/index.css">
+    <script src="js/getDataFromForm.js"></script>
+<!--    <script src="js/validate.js"></script>-->
+    <script src="js/customValidate.js"></script>
+    <script src="js/phoneMask.js"></script>
+    <title>HTML INPUT</title>
+</head>
+<body>
+    <div class="wrapper">
+        <form action="#" id="user-form" name="userForm" class="flex-column user-form" autocomplete="on">
+            <fieldset class="flex-column">
+                <legend>Персональные данные</legend>
+                <label>
+                    Фамилия
+                    <input type="text" name="lastName">
+                </label>
+                <label>
+                    Имя
+                    <input type="text" name="firstName">
+                </label>
+                <label for="middleName">Отчество</label>
+                <input id="middleName" name="middleName" type="text">
+            </fieldset>
+            <label>
+                Логин
+                <input placeholder="Логин" name="username" type="text">
+            </label>
+            <label>
+                Email
+                <input placeholder="Email" name="email" type="email">
+            </label>
+            <label>
+                Телефон
+                <input placeholder="Телефон" name="phone" id="phone" type="tel" class="tel">
+            </label>
+            <label>
+                Пароль
+                <input placeholder="Пароль введите" name="password" type="password">
+            </label>
+            <div>
+                <p>Пол:</p>
+                <label>
+                    <input name="gender" value="male" type="radio" checked>
+                    Мужской
+                </label>
+                <label>
+                    <input name="gender" value="female" type="radio">
+                    Женский
+                </label>
+                <label>
+                    <input name="gender" value="female" type="radio" checked>
+                    Паркет
+                </label>
+            </div>
+            <fieldset class="flex-column">
+                <legend>Специализация:</legend>
+                <label>
+                    <input name="specialization" value="fe" type="checkbox" checked>
+                    Frontend
+                </label>
+                <label>
+                    <input name="specialization" value="be" type="checkbox" checked>
+                    Backend
+                </label>
+                <label>
+                    <input name="specialization" value="mobile" type="checkbox">
+                    Mobile
+                </label>
+            </fieldset>
+            <select name="animal">
+                <option value="dog">Собака</option>
+                <option value="cat">Кошка</option>
+                <option value="parrot">Попугай</option>
+            </select>
+            <div class="flex-column">
+                <label for="comment">Коммент</label>
+                <textarea id="comment" name="comment"></textarea>
+            </div>
+            <button class="user-form__submit">Submit</button>
+            <button type="reset">Reset</button>
+        </form>
+        <details>
+            <summary class="header-1">Очень много других инпутов</summary>
+            <div class="flex-column">
+                <label>
+                    type=number
+                    <input type="number">
+                </label>
+                <label>
+                    type=search
+                    <input type="search">
+                </label>
+                <label>
+                    type=color
+                    <input type="color">
+                </label>
+                <label>
+                    type=date
+                    <input type="date">
+                </label>
+                <label>
+                    type=datetime-local
+                    <input type="datetime-local">
+                </label>
+                <label>
+                    type=hidden
+                    <input id="metadata" type="hidden" value="metadata-1">
+                </label>
+                <label>
+                    type=file
+                    <input type="file">
+                </label>
+                <label>
+                    type=image
+                    <input type="image">
+                </label>
+                <label>
+                    type=month
+                    <input type="month">
+                </label>
+                <label>
+                    type=range
+                    <input type="range">
+                </label>
+                <label>
+                    type=time
+                    <input type="time">
+                </label>
+                <label>
+                    type=url
+                    <input type="url">
+                </label>
+                <label>
+                    type=week
+                    <input type="week">
+                </label>
+            </div>
+        </details>
+    </div>
+</body>
+</html>
